@@ -1,0 +1,19 @@
+<table *ngIf="hayDatos">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Producto</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let articulo of articulos">
+      <td>{{ articulo.id }}</td>
+      <td>{{ articulo.producto }}</td>
+      <td>{{ articulo.precio }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h1 *ngIf="hayDatos == false">No hay datos</h1>
